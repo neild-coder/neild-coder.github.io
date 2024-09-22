@@ -1,13 +1,13 @@
 body {
-    font-family: 'Arial', sans-serif; 
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; /* Light background */
-    color: #333; /* Dark text color */
+    background-color: #F0F4F9;
+    color: #2D2D38;
 }
 
 header {
-    background-color: #333; /* Example - dark background */
+    background-color: #405782;
     color: #fff;
     text-align: center;
     padding: 2rem 0;
@@ -16,23 +16,31 @@ header {
 section {
     padding: 2rem;
     margin: 1rem;
-    background-color: #fff; /* White section background */
-    border-radius: 8px; /* Slightly rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
+h1, h2, h3 {
+    text-align: center;
     font-weight: bold;
 }
 
-h1, h2, h3 { 
-    text-align: center;
-  }
-  
-  section h1, section h2, section h3 {
-    text-align: center;
-  }
-  
+#about {
+    background-color: #72D2BB;
+    color: #2D2D38;
+}
+
+#projects {
+    background-color: #4B7FCD; /* Medium blue */
+    /* color: #F0F4F9;  Remove this line */ 
+}
+
+
+#contact {
+    background-color: #405782; /* Dark blue background */
+    color: #fff;           /* White text color for better contrast */
+}
+
 
 .projects-container {
     display: flex;
@@ -41,56 +49,56 @@ h1, h2, h3 {
 }
 
 .project {
-    width: 30%; /* Adjust as needed */
-    margin-bottom: 2rem; 
+    width: 30%;
+    margin-bottom: 2rem;
     padding: 1rem;
-    border: 1px solid #ddd; /* Light border */
+    border: none; /* Remove default border */
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    background-color: #fff; /* White background for the card */
+    transition: transform 0.2s ease; /* Add a transition for hover effect */
 }
+
+.project:hover {
+    transform: translateY(-5px); /* Slightly lift the card on hover */
+}
+
 
 .project-link {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: #007bff; /* Example - blue button */
-    color: #fff;
+    background-color: #405782;
+    color: #F0F4F9;
     text-decoration: none;
     border-radius: 4px;
-    transition: background-color 0.3s ease; /* Smooth color change on hover */
+    transition: background-color 0.3s ease;
 }
 
-.project-link:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-}
 
 .social-links {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center; 
-    margin-top: 2rem; /* Add some space above the social links */
+    justify-content: center;
+    margin-top: 2rem;
 }
 
 .social-links li {
-    margin: 0 2rem;  /* Increased spacing between icons */
+    margin: 0 2rem;
     display: flex;
-    align-items: center; /* Vertically center icons */
+    align-items: center;
 }
 
 .social-links a {
     text-decoration: none;
-    color: #333; 
-    font-size: 1rem; /* Example - make icons larger */
+    color: #F0F4F9; /* Use a lighter color for better contrast */
+    font-size: 1rem;
 }
 
 
 footer {
-    background-color: #333; /* Dark background for the footer */
+    background-color: #2D2D38; /* Contact color */
     color: #fff;
     text-align: center;
-    padding: 1rem 0; 
-    /* Removed the following properties */
-    /* position: fixed;  Keep it at the bottom  */
-    /* bottom: 0; */
-    /* width: 100%;  */
+    padding: 1rem 0;
 }
-
