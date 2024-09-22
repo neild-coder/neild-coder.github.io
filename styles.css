@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light background */
+    color: #333; /* Dark text color */
+}
+
+header {
+    background-color: #333; /* Example - dark background */
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: #fff; /* White section background */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+h1, h2, h3 { 
+    text-align: center;
+  }
+  
+  section h1, section h2, section h3 {
+    text-align: center;
+  }
+  
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    width: 30%; /* Adjust as needed */
+    margin-bottom: 2rem; 
+    padding: 1rem;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007bff; /* Example - blue button */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Smooth color change on hover */
+}
+
+.project-link:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    margin-top: 2rem; /* Add some space above the social links */
+}
+
+.social-links li {
+    margin: 0 2rem;  /* Increased spacing between icons */
+    display: flex;
+    align-items: center; /* Vertically center icons */
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #333; 
+    font-size: 1rem; /* Example - make icons larger */
+}
+
+
+footer {
+    background-color: #333; /* Dark background for the footer */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0; 
+    /* Removed the following properties */
+    /* position: fixed;  Keep it at the bottom  */
+    /* bottom: 0; */
+    /* width: 100%;  */
+}
+
